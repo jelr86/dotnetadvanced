@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Categories\" />
+    <None Remove="Categories\Commands\" />
+    <None Remove="Common\" />
+    <None Remove="Common\Interfaces\" />
+    <None Remove="Categories\Queries\" />
+    <None Remove="Items\" />
+    <None Remove="Items\Commands\" />
+    <None Remove="Models\" />
+    <None Remove="Items\Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Categories\" />
+    <Folder Include="Categories\Commands\" />
+    <Folder Include="Common\" />
+    <Folder Include="Common\Interfaces\" />
+    <Folder Include="Categories\Queries\" />
+    <Folder Include="Items\" />
+    <Folder Include="Items\Commands\" />
+    <Folder Include="Models\" />
+    <Folder Include="Items\Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Catalog.Service.Domain\Catalog.Service.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.23" />
+  </ItemGroup>
+</Project>
